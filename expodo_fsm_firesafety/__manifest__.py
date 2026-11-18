@@ -1,0 +1,20 @@
+{
+    "name": "Fire Safety Field Service",
+    "summary": "Field service for fire safety: extinguishers, alarms and equipment, periodic inspection, pressure tests, condition checks and invoicing",
+    "description": "Turn Odoo Community into a service tool for fire safety and fire protection companies. Log each extinguisher, alarm or device, its agent and location, follow the job from install to invoice, track periodic inspections and hydrostatic pressure tests with due dates and certificate references, run the condition checks the job needs, and let customers track their service online.",
+    "version": "18.0.1.0.0",
+    "category": "Services/Field Service",
+    "license": "LGPL-3",
+    "author": "Expodo",
+    "website": "https://expodo.fr",
+    "support": "support@expodo.fr",
+    "images": ["static/description/banner.png", "static/description/icon.png"],
+    "depends": ["expodo_fieldservice"],
+    "data": [
+        "data/firesafety_types.xml",
+        "views/firesafety_views.xml",
+    ],
+    "application": True,
+    "installable": True,
+    "auto_install": False,
+}
