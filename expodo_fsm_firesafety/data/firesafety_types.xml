@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="type_install" model="expodo.fsm.type">
+            <field name="name">Installation / Commissioning</field>
+        </record>
+        <record id="type_install_s1" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_install"/><field name="sequence">10</field>
+            <field name="name">Mount device at the required location</field></record>
+        <record id="type_install_s2" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_install"/><field name="sequence">20</field>
+            <field name="name">Check charge, pressure and seals</field></record>
+        <record id="type_install_s3" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_install"/><field name="sequence">30</field>
+            <field name="name">Fit signage and access instructions</field></record>
+        <record id="type_install_s4" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_install"/><field name="sequence">40</field>
+            <field name="name">Record asset and commission</field></record>
+
+        <record id="type_inspection" model="expodo.fsm.type">
+            <field name="name">Periodic Inspection</field>
+        </record>
+        <record id="type_insp_s1" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_inspection"/><field name="sequence">10</field>
+            <field name="name">Check pressure gauge and tamper seal</field></record>
+        <record id="type_insp_s2" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_inspection"/><field name="sequence">20</field>
+            <field name="name">Check safety pin, hose and nozzle</field></record>
+        <record id="type_insp_s3" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_inspection"/><field name="sequence">30</field>
+            <field name="name">Verify access, signage and mounting</field></record>
+        <record id="type_insp_s4" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_inspection"/><field name="sequence">40</field>
+            <field name="name">Record findings and tag the device</field></record>
+
+        <record id="type_maintenance" model="expodo.fsm.type">
+            <field name="name">Maintenance / Recharge</field>
+        </record>
+        <record id="type_maint_s1" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_maintenance"/><field name="sequence">10</field>
+            <field name="name">Discharge and inspect internally</field></record>
+        <record id="type_maint_s2" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_maintenance"/><field name="sequence">20</field>
+            <field name="name">Refill agent and repressurise</field></record>
+        <record id="type_maint_s3" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_maintenance"/><field name="sequence">30</field>
+            <field name="name">Replace seals and worn parts</field></record>
+        <record id="type_maint_s4" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_maintenance"/><field name="sequence">40</field>
+            <field name="name">Weigh, test and re-tag</field></record>
+
+        <record id="type_pressure" model="expodo.fsm.type">
+            <field name="name">Pressure Test</field>
+        </record>
+        <record id="type_pres_s1" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_pressure"/><field name="sequence">10</field>
+            <field name="name">Empty and depressurise the body</field></record>
+        <record id="type_pres_s2" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_pressure"/><field name="sequence">20</field>
+            <field name="name">Carry out the hydrostatic test</field></record>
+        <record id="type_pres_s3" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_pressure"/><field name="sequence">30</field>
+            <field name="name">Reassemble, recharge and weigh</field></record>
+        <record id="type_pres_s4" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_pressure"/><field name="sequence">40</field>
+            <field name="name">Stamp test date and record next due</field></record>
+
+        <record id="type_repair" model="expodo.fsm.type">
+            <field name="name">Repair / Replacement</field>
+        </record>
+        <record id="type_repair_s1" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_repair"/><field name="sequence">10</field>
+            <field name="name">Diagnose the fault or damage</field></record>
+        <record id="type_repair_s2" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_repair"/><field name="sequence">20</field>
+            <field name="name">Repair or replace the device</field></record>
+        <record id="type_repair_s3" model="expodo.fsm.type.checklist">
+            <field name="type_id" ref="type_repair"/><field name="sequence">30</field>
+            <field name="name">Test and return to service</field></record>
+
+    </data>
+</odoo>
